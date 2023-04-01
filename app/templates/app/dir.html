@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        a {text-decoration: none;}
+    </style>
+    <title>Список файлов</title>
+</head>
+<body>
+    <h2>Список файлов в рабочей директории</h2>
+    {% for file in workdir %}
+        {{ file }} <br>
+    {% endfor %}
+    <p><a href="{% url 'home'%}"><button>на главную</button></a>
+</body>
+</html>
